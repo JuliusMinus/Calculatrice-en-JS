@@ -6,3 +6,11 @@ buttons.forEach((button) => {
     result.textContent += e.target.id;
   });
 });
+
+equal.addEventListener("click", () => {
+  result.textContent = eval(result.textContent);
+});
+
+clear.addEventListener("click", () => {
+  result.textContent = "";
+});
